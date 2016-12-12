@@ -10,6 +10,17 @@ Additionally, if used as a script, Python-tesseract will print the recognized
 text in stead of writing it to a file. Support for confidence estimates and
 bounding box data is planned for future releases.
 
+*************************************************
+
+This Fork includes the fix for
+```
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2
+```
+type of errors when Tesseract produces non-ascii output.
+The fix forces pytesseract to treat Tesseract's output as a binary file type and as UTF-8 encoded.
+
+*************************************************
+
 
 USAGE:
 ```
